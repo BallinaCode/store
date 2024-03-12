@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+    <h1 class="fs-1 m-3"><strong>Tienda Online</strong> - Juan Pablo Ortiz Ballina</h1>
+    <a class="btn btn-primary m-4" href="#cart">Carrito</a>
+  </div>
+</nav>
+<div class="container">
+  <app-product-item></app-product-item>
+  <app-cart></app-cart>
+  <div class="container">
+    <h2 id="cart">Carrito</h2>
+    <table #miTabla class="table mt-3">
+      <thead>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td *ngIf="product.stock > 0">{{ product.name }}</td>
+          <td *ngIf="product.stock > 0">{{ product.price }}</td>
+          <td *ngIf="product.stock > 0">{{ product.stock }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

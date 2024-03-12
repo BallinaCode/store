@@ -21,11 +21,12 @@ ul {
     margin: 50px auto;
     align-items: center;
     justify-content: center;
+    padding-bottom: 200px;
 }
 
 .item {
     width: 100%;
-    height: 300px;
+    height: 330px;
     border-radius: 40px;
     overflow: hidden;
 }
@@ -40,13 +41,14 @@ ul {
 }
 
 button {
-    width: 35%;
+    width: 20%;
+    height: 50px;
     margin: -5px auto;
     padding: 7px;
 }
 
 .t{
-    width: 35%;
+    width: 20%;
     margin: 10px auto;
 }
 

@@ -5,7 +5,7 @@ import { Product } from './product/product.module';
   providedIn: 'root'
 })
 export class SaveProductService {
-  cart: Product[];
+  public cart: Product[];
 
   constructor() {
     this.cart = [];
@@ -13,6 +13,5 @@ export class SaveProductService {
 
   public saveProduct(newProduct: Product, cart: Product[]): void {
     cart.push(newProduct);
-    
   }
 }
